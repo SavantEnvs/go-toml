@@ -1,0 +1,8 @@
+project: savantenvs/go-toml
+target: fuzz_float-mined-f7d9b9b
+cmds:
+  - cmd: /mayhem/fuzz_float
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_float-mined-f7d9b9b/testsuite
